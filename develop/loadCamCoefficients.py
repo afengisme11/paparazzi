@@ -1,4 +1,3 @@
-# https://aliyasineser.medium.com/opencv-camera-calibration-e9a48bdd1844
 import cv2
 
 
