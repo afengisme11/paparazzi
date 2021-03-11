@@ -1,6 +1,5 @@
+# python=3.7.10  OpenCV=4.5.1.48
 import numpy as np
-# import extract_information_flow_field as OF
-import matplotlib.pyplot as plt
 import os
 import re
 import cv2
