@@ -17,7 +17,7 @@ import pylab as pl
 folder_path = "green_test_graphs/"
 filenames = os.listdir(folder_path)
 
-print("files for test:", filenames)
+print("files for green pixel counting test:", filenames)
 
 # YUV range for green
 GREEN_MIN = np.array([50, 0, 0], np.uint8)
