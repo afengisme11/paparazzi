@@ -28,11 +28,10 @@ for _file in filenames:
     if _file.split('.')[-1] == 'jpg':
         image = cv2.imread(folder_path+_file)
         print(image.shape)
+
         # The original size of the image is [520*240], only the middle bottom
         # of the image is relevant. Crop the image such that only 
-        # [130:390 in width, 0:200 in height] will be analyzed. 
-        # The values can be palyed around for a better performance.
-
+        # [130:390 in width, 0:200 in height] will be analyzed.
         img = image[130:390, 0:200]
         img = cv2.cvtColor(img, cv2.COLOR_BGR2YUV) # convert to YUV
         dst = cv2.inRange(img, GREEN_MIN, GREEN_MAX) # output 0 for pixels without green
