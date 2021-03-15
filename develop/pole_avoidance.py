@@ -1,4 +1,5 @@
 # python=3.7.10  OpenCV=4.5.1.48
+# Floor detection added to avoid out-of-bounds	March 15 2021	Haoyu Feng
 import numpy as np
 import os
 import re
